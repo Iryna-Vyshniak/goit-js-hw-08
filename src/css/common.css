@@ -25,7 +25,10 @@ li {
   margin-bottom: 20px;
 }
 
-a {
+a[href='01-gallery.html'],
+a[href='02-video.html'],
+a[href='03-feedback.html'],
+a[href='index.html'] {
   /* 
   color: #61677c;
   font-weight: 600;
@@ -52,10 +55,16 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+a[href='01-gallery.html']:hover,
+a[href='02-video.html']:hover,
+a[href='03-feedback.html']:hover,
+a[href='index.html']:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
 
-a:active {
+a[href='01-gallery.html']:active,
+a[href='02-video.html']:active,
+a[href='03-feedback.html']:active,
+a[href='index.html']:active {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }

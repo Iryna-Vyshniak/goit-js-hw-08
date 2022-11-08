@@ -21,14 +21,11 @@ ul {
   list-style: none;
 }
 
-li {
+li.main-item {
   margin-bottom: 20px;
 }
 
-a[href='01-gallery.html'],
-a[href='02-video.html'],
-a[href='03-feedback.html'],
-a[href='index.html'] {
+.main-link {
   /* 
   color: #61677c;
   font-weight: 600;
@@ -55,16 +52,10 @@ a[href='index.html'] {
   cursor: pointer;
 }
 
-a[href='01-gallery.html']:hover,
-a[href='02-video.html']:hover,
-a[href='03-feedback.html']:hover,
-a[href='index.html']:hover {
+.main-link:hover {
   box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
 }
 
-a[href='01-gallery.html']:active,
-a[href='02-video.html']:active,
-a[href='03-feedback.html']:active,
-a[href='index.html']:active {
+.main-link:active {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
 }

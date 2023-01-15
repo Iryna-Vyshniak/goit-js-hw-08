@@ -44,6 +44,8 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 ```
 
+[![Image from Gyazo](https://i.gyazo.com/2896c08c15ee006f4b5934dd1d593f71.gif)](https://gyazo.com/2896c08c15ee006f4b5934dd1d593f71)
+
 ## Завдання 2 - відеоплеєр
 
 HTML містить `<iframe>` з відео для Vimeo плеєра. Напиши скрипт, який буде
@@ -85,6 +87,8 @@ HTML містить `<iframe>` з відео для Vimeo плеєра. Напи
 7. Додай до проекту бібілотеку
    [lodash.throttle](https://www.npmjs.com/package/lodash.throttle) і зроби так,
    щоб час відтворення оновлювався у сховищі не частіше, ніж раз на секунду.
+
+[![Image from Gyazo](https://i.gyazo.com/2b6ca0b6e2df0a52b3328e1361f4b824.gif)](https://gyazo.com/2b6ca0b6e2df0a52b3328e1361f4b824)
 
 ## Завдання 3 - форма зворотного зв'язку
 

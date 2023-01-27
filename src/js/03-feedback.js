@@ -22,9 +22,9 @@ function storageFormData(e) {
 function onFormSubmit(e) {
     e.preventDefault();
 
-    // if (refs.input.value === "" || refs.textarea.value === "") {
-    //     return alert(`Please fill in all the fields!`);
-    // }
+     if (refs.input.value === "" || refs.textarea.value === "") {
+         return alert(`Please fill in all the fields!`);
+     }
 
     const savedData = JSON.parse(localStorage.getItem(STORAGE_KEY));
     console.log(savedData);

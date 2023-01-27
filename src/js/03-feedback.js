@@ -28,8 +28,8 @@ function onFormSubmit(e) {
 //          return alert(`Please fill in all the fields!`);
 //      }
 
-//     const savedDataObject = JSON.parse(localStorage.getItem(STORAGE_KEY));
-    console.log(savedDataObject);
+    const savedDatas = JSON.parse(localStorage.getItem(STORAGE_KEY));
+    console.log(savedDatas);
 
     e.currentTarget.reset();
     localStorage.removeItem(STORAGE_KEY);
@@ -52,6 +52,8 @@ function reloadPage() {
   if (savedDataObject.message) {
     refs.textarea.value = savedDataObject.message;
   }
+  refs.input.value = formData.email;
+  refs.textarea.value = formData.message;
 }
 
 

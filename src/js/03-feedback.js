@@ -35,7 +35,7 @@ function onFormSubmit(e) {
 }
 
 function reloadPage() {
-    // formData = { email: '', message: '' };
+    formData = { email: '', message: '' };
     const savedValues = localStorage.getItem(STORAGE_KEY);
 
     if (savedValues) {

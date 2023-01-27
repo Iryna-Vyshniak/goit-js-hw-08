@@ -46,14 +46,18 @@ function reloadPage() {
 //         // Object.assign(formData, JSON.parse(savedValues));
 //         refs.input.value = formData.email;
 //         refs.textarea.value = formData.message;}
-  if (savedDataObject.email) {
-    refs.input.value = savedDataObject.email;
-  }
-  if (savedDataObject.message) {
-    refs.textarea.value = savedDataObject.message;
-  }
-  refs.input.value = formData.email;
-  refs.textarea.value = formData.message;
+//  if (savedDataObject.email) {
+//    refs.input.value = savedDataObject.email;
+//  }
+//  if (savedDataObject.message) {
+//    refs.textarea.value = savedDataObject.message;
+//  }
+//  refs.input.value = formData.email;
+//  refs.textarea.value = formData.message;
+        if (savedValues){
+    for (let item of savedDataObject) {
+refs.form.elements[item].value = savedDataObject[item];
+}
 }
 
 

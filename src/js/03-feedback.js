@@ -57,8 +57,8 @@ function reloadPage() {
         if (savedValues){
     for (let item of savedDataObject) {
 refs.form.elements[item].value = savedDataObject[item];
+   }
+  }
 }
-}
-
 
 

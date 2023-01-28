@@ -23,7 +23,6 @@ function storageFormData(e) {
 
 function onFormSubmit(e) {
   e.preventDefault();
-
   //      if (refs.input.value === "" || refs.textarea.value === "") {
   //          return alert(`Please fill in all the fields!`);
   //      }
@@ -37,21 +36,9 @@ function onFormSubmit(e) {
 }
 
 function reloadPage() {
-  //     formData = { email: '', message: '' };
-  //     const savedValues = localStorage.getItem(STORAGE_KEY);
-
-  //     if (savedValues) {
-  //         formData = JSON.parse(savedValues);
-  //         console.log(formData);
-  //         // Object.assign(formData, JSON.parse(savedValues));
-  //         refs.input.value = formData.email;
-  //         refs.textarea.value = formData.message;}
-  if (savedDataObject.email) {
-    refs.input.value = savedDataObject.email;
+  if (savedValues) {
+    for (let key in savedDataObject) {
+      refs.form.elements[key].value = savedDataObject[key];
+    }
   }
-  if (savedDataObject.message) {
-    refs.textarea.value = savedDataObject.message;
-  }
-  refs.input.value = formData.email;
-  refs.textarea.value = formData.message;
 }

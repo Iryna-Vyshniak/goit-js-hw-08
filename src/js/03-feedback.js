@@ -1,7 +1,7 @@
 import throttle from 'lodash.throttle';
 
 const STORAGE_KEY = 'feedback-form-state';
-let formData = { email: '', message: '' };
+let formData = {};
 const savedValues = localStorage.getItem(STORAGE_KEY);
 const savedDataObject = JSON.parse(savedValues);
 
@@ -37,8 +37,14 @@ function onFormSubmit(e) {
 
 function reloadPage() {
   if (savedValues) {
-    for (let key in savedDataObject) {
-      refs.form.elements[key].value = savedDataObject[key];
-    }
+    // 1st variant
+
+    // for (let key in savedDataObject) {
+    //   refs.form.elements[key].value = savedDataObject[key];
+    // }
+
+    // best light variant
+    refs.input.value = savedDataObject.email || '';
+    refs.textarea.value = savedDataObject.message || '';
   }
 }

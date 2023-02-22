@@ -64,16 +64,15 @@ form.addEventListener('input', throttle(onInputData, 500));
 
 function onFormSubmit(e) {
   e.preventDefault();
+  const { email, message } = e.currentTarget.elements;
+  console.log({ email: email.value, message: message.value });
+
   if (localStorage.getItem(LOCAL_KEY)) {
     // const data = JSON.parse(localStorage.getItem(LOCAL_KEY));
     // console.log(data);
     localStorage.removeItem(LOCAL_KEY);
   }
-  const { email, message } = e.currentTarget.elements;
-  console.log({ email: email.value, message: message.value });
-
   e.currentTarget.reset();
-  localStorage.removeItem(LOCAL_KEY);
 }
 
 function onInputData(e) {
